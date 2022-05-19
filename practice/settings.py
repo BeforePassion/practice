@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-
+from .prac_settings import(Django_Secret_Key)
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-0ih0zi3yae$x^3kuyfmo-@j%re&d_#30d6h2nd=hwyymtsb26a'
+SECRET_KEY = Django_Secret_Key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
